@@ -6,7 +6,8 @@ class GameState
 private:
 	int bet;//arbitrary data to test MVC
 	//Player players[]
-	Deck deck;
+	//Dealer dealer
+	Deck deck;//move to dealer
 public:
 	GameState();
 	~GameState();
