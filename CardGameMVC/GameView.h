@@ -6,5 +6,7 @@ public:
 	GameView();
 	~GameView();
 	void displayBet(int bet);
+	//displayHands()
+	//displayUserChoices()
 };
 
