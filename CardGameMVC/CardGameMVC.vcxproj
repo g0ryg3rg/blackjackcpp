@@ -151,13 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="GameController.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameView.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Card.cpp" />
     <ClCompile Include="CardGameMVC.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="GameController.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="GameView.cpp" />

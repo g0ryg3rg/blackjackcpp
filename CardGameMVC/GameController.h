@@ -13,5 +13,6 @@ public:
 	void setBet(int bet);
 	int getBet();
 	void updateView();
+	GameState getGameState() { return state; }
 };
 

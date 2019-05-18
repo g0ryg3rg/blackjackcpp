@@ -14,11 +14,15 @@ int main()
 	GameView view;
 	GameController controller = GameController(view, state);
 
+
+
 	controller.setBet(100);
 	controller.updateView();
 
 	controller.setBet(125);
 	controller.updateView();
+
+	controller.getGameState().getDeck().printDeck();
 
 	std::cout << "End CardGameMVC" << std::endl;
 
