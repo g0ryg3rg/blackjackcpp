@@ -1,0 +1,132 @@
+//MODEL
+
+class Card 
+{
+};
+class Hand
+{
+public:
+private: 
+	std::vector <Card> mCards;
+	unsigned int mBet;
+};
+class Deck
+{
+public:
+	bool shuffle();
+	bool drawCard();
+private:
+	Card cards[];
+};
+class Player
+{
+public:
+	bool clearCards();
+	bool takeCard(Card iCard, unsigned int iHand);
+	bool setInitialBet(unsigned int iHand);
+private:
+	unsigned int mMoney;
+	Hand hands[2];
+}
+class Dealer 
+{
+public:
+
+	dealCards(Player iPlayers[])
+	{
+
+	}
+
+	hit(Player&iCurrentPlayer)
+	{
+
+	}
+
+	stay(Player& iCurrentPlayer)
+	{
+	}
+
+	split(Player& iCurrentPlayer)
+	{
+	}
+
+	doubleDown(Player& iCurrentPlayer)
+	{
+
+	}
+private:
+	Deck mDeck;
+};
+
+//CONTROLLER
+
+GameLoop()
+{
+	//while (Players want to play and has money)
+	//{
+		//get bets from all players
+		//foreach Players: p
+	    //{
+			//p.setInitialBet();
+		//}
+		//deal hands
+		//anyone have 21 (not house)
+
+		//at current player
+		//for each hand
+		//split? if you have a pair at first hand
+		//double down (if start of hand)--> give another card end of hand
+		//hit or stay if not busted
+		//if stay break
+
+		//dealers turn
+		//show other card?
+		//while(handsValue() < 17 && handsValue() < 21)
+		//{
+		//  hit(dealer);
+		//}
+		//ACE IS ALWAYS 11 unless busting hand
+		//payBets(Player iPlayers[])
+		//
+	//}
+
+}
+
+//VIEWER
+
+//Dealer hand : CARD 1; CARD 2
+//
+//Your hard : HAND 1 : HAND 2
+//
+//Your bet : BET 1: BET 2
+//
+//Action : Place bet, Split, Double down, Hit, Stay
+
+
+//bet view
+// show 
+//
+
+enum eAction
+{
+	PlaceBet,
+	Split,
+	DoubleDown,
+	Hit,
+	Stay
+};
+
+class GameView 
+{
+public:
+	bool updateView();
+	{
+
+	};
+private:
+	string mDealerHand;
+	string mPlayerHands;
+	string mPlayersBets;
+	string mPlayerActions;
+	bool mDoubleDown
+};
